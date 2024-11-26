@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./shop.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-- ----------------------------------- Start Navbar ----------------------------------------- -->
+    <header>
+        <div class="container">
+            <a href="../home/index.html" class="logo"><span style="color: #9c9c9c">Wa</span><i class="bx bxs-watch">Tche</i></a>
+            <ul class="navbar">
+                <li><a href="../home/index.html" class="active">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="../home/index.html#discount-h2">Discount</a></li>
+            </ul>
+            <div class="main-nav">
+                <a id="user" class="user"></a>
+                <a id="Sign In" href="../Auth/authentication.html"> Sign In / Register</a>
+                <a href="../CheckOut/checkout.html" class="basket"><i class="bx bxs-shopping-bag"></i><span id="cart-count"></span></a>
+            </div>
+            <div id="menu-icon">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+    </header>
+    <!-- ----------------------------------- End Navbar ----------------------------------------- -->
+    <main>
+        <div class="containerHomos">
+            <div class="sub-nav">
+                <div class="yala">
+                    <span onclick="allwatch(event)" style="cursor: pointer ; ">Watches</span>
+                    <span class="ehdnya"><span style="cursor: pointer;">Collection</span>
+                        <div class="desc">
+                            <li id="classic" onclick="changeCategory(event)">Classic</li>
+                            <li id="sport" onclick="changeCategory(event)">Sport</li>
+                            <li id="gold" onclick="changeCategory(event)">Gold</li>
+                            <li id="touch" onclick="changeCategory(event)">Touch</li>
+                            <li id="pocket" onclick="changeCategory(event)">Pocket</li>
+                            <li id="rolex" style="color: red;" onclick="changeCategory(event)">Rolex</li>
+                        </div>
+                    </span>
+                </div>
+                <hr>
+            </div>
+            <div class="all-cards">      
+            </div>
+        </div>
+    </main>
+    <script src="./shop.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Check Out</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./checkout.css" />
+  </head>
+  <body>
+    <div id="msg-box">
+      <div id="msg"></div>
+      <button id="close-msg-box" onclick="closePopUp(event)">Close</button>
+    </div>
+    <header>
+      <div class="container">
+        <a href="../home/index.html" class="logo">
+          <span style="color: #9c9c9c">Wa</span>
+          <i class="bx bxs-watch">Tche</i>
+        </a>
+        <ul class="navbar">
+          <li><a href="../home/index.html" class="active">Home</a></li>
+          <li><a href="../shop/shop.html">Shop</a></li>
+          <li><a href="../home/index.html#discount-h2">Discounts</a></li>
+        </ul>
+        <div class="main-nav">
+          <a id="user" class="user"></a>
+          <a id="Sign In" href="../Auth/authentication.html">
+            Sign In / Register</a
+          >
+          <a href="../CheckOut/checkout.html" class="basket"
+            ><i class="bx bxs-shopping-bag"></i><span id="cart-count"></span></a
+          >
+        </div>
+        <div id="menu-icon">
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="page-content">
+        <section class="cart-container">
+          <span>Cart Items</span>
+          <hr />
+        </section>
+        <aside class="delivery-details">
+          <span>Billing Details</span>
+          <hr />
+          <form method="POST" action="">
+            <input
+              type="text"
+              class="text-input"
+              name="username"
+              id="username"
+              placeholder="Username*"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address*"
+            />
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Address*"
+            />
+            <select name="country" id="country">
+              <option id="" selected hidden>Choose Country</option>
+            </select>
+            <input type="tel" name="phone" id="phone" placeholder="Phone*" />
+            <input type="text" name="city" id="city" placeholder="City" />
+            <button type="submit" id="place-order">Place Order</button>
+          </form>
+        </aside>
+      </section>
+    </main>
+    <script src="./checkout.js"></script>
+  </body>
+</html>

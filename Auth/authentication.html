@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign In</title>
+        <link rel="stylesheet" href="authentication.css" />
+    </head>
+    <body>
+        <div id="msg-box">
+            <div id="msg"></div>
+            <button id="close-msg-box" onclick="closePopUp(event)">Close</button>
+        </div>
+        <div id="form-container" class="container">
+            <form id="loginForm" class="sign-in-form" onsubmit="return login(event)">
+                <h2>login to store</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username-input" placeholder="Username" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="password" id="password-input" placeholder="Password" required>
+                </div>
+                <input type="submit" value="Sign In" class="btn solid" />
+                <button type="button" onclick="showSignupForm()">Sign UP</button>
+            </form>
+            <form id="signupForm" class="sign-in-form" onsubmit="return register(event)" style="display: none">
+                <h2>sign up</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username-register-input" placeholder="Username" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="password" id="password-register-input" placeholder="Password" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-address-card"></i>
+                    <input type="text" id="address-register-input" placeholder="Address" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" id="phone-register-input" placeholder="Phone Number" required>
+                </div>
+                <input type="submit" value="Sign up" class="btn solid">
+                <button type="button" onclick="showLoginForm()">Login</button>
+            </form>
+        </div>
+        <script src="./authentication.js"></script>
+    </body>
+</html>

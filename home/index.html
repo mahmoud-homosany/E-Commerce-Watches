@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- ----------------------------------- Start Navbar ----------------------------------------- -->
+    <header>
+      <div class="container">
+        <a href="" class="logo"
+          ><span style="color: #9c9c9c">Wa</span
+          ><i class="bx bxs-watch">Tche</i></a
+        >
+        <ul class="navbar">
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="../shop/shop.html">Shop</a></li>
+          <li><a href="#discount-h2">Discount</a></li>
+        </ul>
+        <div class="main-nav">
+          <a id="user" href="" class="user"></a>
+          <a href="../Auth/authentication.html" id="Sign In">
+            Sign In / Register</a
+          >
+          <a href="../CheckOut/checkout.html" class="basket"
+            ><i class="bx bxs-shopping-bag"></i><span id="cart-count"></span
+          ></a>
+        </div>
+        <div id="menu-icon">
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- ----------------------------------- End Navbar ----------------------------------------- -->
+    <!-- start demo -->
+    <div class="video">
+      <h1 class="main-title-demo">Welcome to Watch E-commerce</h1>
+      <video autoplay muted loop id="background-video">
+        <source
+          src="./video/new-rolex-deepsea-homepage-cover.webm"
+          type="video/mp4"
+        />
+      </video>
+      <a href="#best-seller" class="go-down">
+        <i class="bx bx-chevrons-down fa-2x"></i>
+      </a>
+    </div>
+    <!-- end discount -->
+    <!-- Start best seller -->
+    <div class="best-seller" id="best-seller">
+      <h2 class="main-title">Best Seller</h2>
+      <div class="container">
+        <div class="box">
+          <img
+            src="https://www.tissotwatches.com/media/catalog/product/T/1/T150.410.11.041.00_R.png?im=Resize=(1200,1200)"
+            alt=""
+          />
+          <div class="content">
+            <h3>TISSOT PR 100</h3>
+            <p>
+              Diameter:40 mm,Interchangeable quick release bracelet,316L
+              stainless steel case,Swiss Quartz movement,Scratch-resistant
+              sapphire crystal
+            </p>
+          </div>
+          <div class="info">
+            <button onclick="getDetails(1)" class="read-more">Read More</button>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="https://www.tissotwatches.com/media/catalog/product/T/1/T150.210.11.031.00_R_1.png?im=Resize=(1200,1200)"
+            alt=""
+          />
+          <div class="content">
+            <h3>TISSOT PR 100 34MM</h3>
+            <p>
+              Diameter:34 mm,Interchangeable quick release bracelet,316L
+              stainless steel case,Swiss Quartz movement,Scratch-resistant
+              sapphire crystal
+            </p>
+          </div>
+          <div class="info">
+            <button onclick="getDetails(2)" class="read-more">Read More</button>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="https://www.tissotwatches.com/media/catalog/product/T/1/T150.410.11.091.00_R_2.png?im=Resize=(1200,1200)"
+            alt=""
+          />
+          <div class="content">
+            <h3>TISSOT PR 100</h3>
+            <p>
+              Diameter:40 mm,Interchangeable quick release bracelet,316L
+              stainless steel case,Swiss Quartz movement,Scratch-resistant
+              sapphire crystal
+            </p>
+          </div>
+          <div class="info">
+            <button onclick="getDetails(4)" class="read-more">Read More</button>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="https://www.tissotwatches.com/media/catalog/product/T/0/T006.407.16.033.00_R_1.png?im=Resize=(1200,1200)"
+            alt=""
+          />
+          <div class="content">
+            <h3>TISSOT LE LOCLE POWERMATIC80</h3>
+            <p>
+              Diameter:39.3 mm,Interchangeable quick release bracelet,Up to 80
+              hours power reserve,316L stainless steel case,See-through caseback
+            </p>
+          </div>
+          <div class="info">
+            <button onclick="getDetails(6)" class="read-more">Read More</button>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="https://www.tissotwatches.com/media/catalog/product/T/0/T006.407.16.053.00_R.png?im=Resize=(1200,1200)"
+            alt=""
+          />
+          <div class="content">
+            <h3>TISSOT LE 20TH ANNIVERSARY</h3>
+            <p>
+              Diameter:39.3 mm,Interchangeable quick release bracelet,Up to 80
+              hours power reserve,316L stainless steel case,See-through
+              caseback,Swiss automatic movement
+            </p>
+          </div>
+          <div class="info">
+            <button onclick="getDetails(7)" class="read-more">Read More</button>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="https://www.tissotwatches.com/media/catalog/product/T/1/T150.210.11.041.00_R_1.png?im=Resize=(1200,1200)"
+            alt=""
+          />
+          <div class="content">
+            <h3>TISSOT PR 100 34MM</h3>
+            <p>
+              Diameter:34 mm,Interchangeable quick release bracelet,<br />316L
+              stainless steel case,Swiss Quartz movement,<br />Scratch-resistant
+              sapphire crystal
+            </p>
+          </div>
+          <div class="info">
+            <button onclick="getDetails(9)" class="read-more">Read More</button>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End best seller -->
+    <!-- Start Landing -->
+    <h2 id="discount-h2" class="main-title">Discount</h2>
+    <div class="landing">
+      <div class="container">
+        <div class="text">
+          <h1>Exclusive Discount Offer !</h1>
+          <p>
+            Experience the epitome of luxury and precision with our exclusive
+            discount on Rolex watches. Whether you're looking for timeless
+            elegance or cutting-edge innovation, our collection has something
+            for every discerning taste. Don't miss this rare opportunity to own
+            a piece of horological excellence at an unbeatable price.
+          </p>
+          <div class="price-container">
+            <span class="original-price">$ 5000</span>
+            <span class="discount-price">$ 4999</span>
+          </div>
+          <button onclick="getDetails(65)" class="read-more">Read More</button>
+        </div>
+        <div class="image">
+          <img src="./img/Rolex.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End Landing -->
+    <!-- Start Footer -->
+    <div class="spikes"></div>
+    <div class="footer">
+      <div class="container">
+        <div class="box">
+          <h3>Watche</h3>
+          <ul class="social">
+            <li>
+              <a href="#" class="facebook">
+                <i class="bx bxl-facebook-circle"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="twitter"> <i class="bx bxl-twitter"></i> </a>
+            </li>
+            <li>
+              <a href="#" class="youtube"> <i class="bx bxl-youtube"></i> </a>
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <ul class="links">
+            <li>
+              <i class="bx bxl-linkedin-square"></i
+              ><a
+                href="https://www.linkedin.com/in/khaled-ashraf-761b40221/"
+                target="_blank"
+                >KhaledAshraf</a
+              >
+            </li>
+            <li>
+              <i class="bx bxl-linkedin-square"></i
+              ><a
+                href="https://www.linkedin.com/in/m-a-elsonbaty"
+                target="_blank"
+                >MahmoudElsonbaty</a
+              >
+            </li>
+            <li>
+              <i class="bx bxl-linkedin-square"></i
+              ><a
+                href="https://www.linkedin.com/in/mahmoud-homosany-804a78317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
+                >MahmoudElhomosany</a
+              >
+            </li>
+            <li>
+              <i class="bx bxl-linkedin-square"></i
+              ><a
+                href="https://www.linkedin.com/in/mohamed-mostafa-715454322/"
+                target="_blank"
+                >MohamedMady</a
+              >
+            </li>
+            <li>
+              <i class="bx bxl-linkedin-square"></i
+              ><a
+                href="https://www.linkedin.com/in/nada-ossama-59a907286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
+                >NadaOssama</a
+              >
+            </li>
+          </ul>
+          <p class="text">Designed with ❤️ by Team One🐱‍🚀</p>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2024 Watche Site. All rights reserved.</p>
+    </div>
+    <!-- End Footer -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- --------------------------- link javascript --------------------------- -->
+
+    <script src="./index.js"></script>
+  </body>
+</html>

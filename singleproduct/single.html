@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>single product page</title>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="../home/index.html" class="logo">
+                <span style="color: #9c9c9c">Wa</span>
+                <i class="bx bxs-watch">Tche</i>
+            </a>
+            <ul class="navbar">
+                <li><a href="../home/index.html" class="active">Home</a></li>
+                <li><a href="../shop/shop.html">Shop</a></li>
+                <li><a href="../home/index.html#discount-h2">Discounts</a></li>
+            </ul>
+            <div class="main-nav">
+                <a id="user" class="user"></a>
+                <a id="Sign In" href="../Auth/authentication.html"> Sign In / Register</a>
+                <a href="../CheckOut/checkout.html" class="basket"><i class="bx bxs-shopping-bag"></i><span id="cart-count"></span></a>
+            </div>
+            <div id="menu-icon">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+    </header>
+  <div class="item-container">
+    <div class="right-box">
+      <div class="main-img-box">
+        <img src="" id="main-img" class="main-img" alt="" />
+      </div>
+      <div class="small-img">
+        <div class="img-box"><img src="" alt="" class="image" /></div>
+        <div class="img-box"><img src="" alt="" class="image" /></div>
+      </div>
+    </div>
+    <div class="details-box">
+      <h1 id="title"></h1>
+      <span id="price"></span>
+      <table cellspacing="0" class="inpits">
+        <tr>
+          <div class="item-controls">
+            <button class="decrease-quantity" onclick="decreaseQuantity(event)"><i class='bx bxs-checkbox-minus'></i></button>
+            <div class="item-quantity">
+                <span class="Qty">Qty: </span>
+                <input id="quantity-input" type="number" min="1" max="10">
+            </div>
+            <button class="increase-quantity" onclick="increaseQuantity(event)"><i class='bx bxs-plus-square bx-tada bx-rotate-90'></i></button>
+        </div>
+        </tr>
+      </table>
+      <h4>Desctiption</h4>
+      <p id="desctiption"></p>
+      <button id="add-btn" onclick="addToCart(event)">Add To Cart</button>
+    </div>
+  </div>
+  <!-- ------------------------------ link css ------------------------------- -->
+  <link rel="stylesheet" href="single.css">
+  <!-- ------------------------------- link js ------------------------------- -->
+  <script src="single.js"></script>
+</body>
+</html>
